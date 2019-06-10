@@ -8,8 +8,8 @@ var smsTotalOne = document.querySelector(".smsTotalOne");
 var totalOne = document.querySelector(".totalOne");
 //add an event listener for when the add button is pressed
 var addToBillBtn = document.querySelector(".addToBillBtn");
-var callsTotal = 0;
-var smsTotal = 0;
+var callsTotal1 = 0;
+var smsTotal1 = 0;
 
 
 function textBillTotal(){
@@ -18,15 +18,15 @@ function textBillTotal(){
     var billTypeEntered = billTypeText.value.trim();
     // update the correct total
     if (billTypeEntered === "call"){
-        callsTotal += 2.75
+        callsTotal1 += 2.75
     }
     else if (billTypeEntered === "sms"){
-        smsTotal += 0.75;
+        smsTotal1 += 0.75;
     }
     //update the totals that is displayed on the screen.
-    callTotalOne.innerHTML = callsTotal.toFixed(2);
-    smsTotalOne.innerHTML = smsTotal.toFixed(2); 
-    var totalCost1 = (callsTotal + smsTotal).toFixed(2);
+    callTotalOne.innerHTML = callsTotal1.toFixed(2);
+    smsTotalOne.innerHTML = smsTotal1.toFixed(2); 
+    var totalCost1 = (callsTotal1 + smsTotal1).toFixed(2);
     console.log(totalCost1);
      totalOne.innerHTML = totalCost1;
     
