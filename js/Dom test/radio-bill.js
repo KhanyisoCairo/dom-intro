@@ -1,11 +1,17 @@
 // get a reference to the sms or call radio buttons
-
+var billItemTypeRadio =document.querySelector(".billItemTypeRadio");
 
 //get a reference to the add button
-
+var radioBillAddBtn = document.querySelector(".radioBillAddBtn");
 //create a variable that will keep track of the total bill
-
+var callTotalTwo = document.querySelector(".callTotalTwo");
+var smsTotalTwo = document.querySelector(".smsTotalTwo");
+var totalTwo = document.querySelector(".totalTwo");
 //add an event listener for when the add button is pressed
+
+
+var callsTotal2 = 0;
+var smsTotal2 = 0;
 
 function radiobillTotal(){
 
@@ -44,7 +50,7 @@ function radiobillTotal(){
 
 }
 }
-
+radioBillAddBtn.addEventListener('click',radiobillTotal );
 
 //in the event listener get the value from the billItemTypeRadio radio buttons
 // * add the appropriate value to the running total
