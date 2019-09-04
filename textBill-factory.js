@@ -31,11 +31,11 @@ function FactoryTextBill() {
 
     function color() {
 
-        if (total >= 50) {
+        if (getTotalCost() >= 50) {
        
             return "danger";
         }
-        else if (total >= 30) {
+        else if (getTotalCost() >= 30) {
         return "warning";
         }
     }

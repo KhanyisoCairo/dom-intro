@@ -18,6 +18,7 @@ var smsTotal1 = 0;
 
 function textBillTotal() {
 
+    var color = FactoryIntance.color();
 //    var color  = factoryInstance.color();
     var billTypeEntered = billTypeText.value;
 
@@ -32,7 +33,7 @@ function textBillTotal() {
         smsTotal : FactoryIntance.getSmsCost(),
         callTotal : FactoryIntance.getCallCost(),
         total : FactoryIntance.getTotalCost(),
-        //color
+        color
         
       
     });

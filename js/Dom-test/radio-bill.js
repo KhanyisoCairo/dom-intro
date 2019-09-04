@@ -30,12 +30,13 @@ function radiobillTotal() {
 
     }function display(){
 
-
+var getColor =factoryInstance.colorChange();
  var data = userTemplate({
             callTotal: "R" + factoryInstance.getCalls(),
             smsTotal: "R" + factoryInstance.getSms(),
             total: "R" + factoryInstance.getTotal(),
-            getColor 
+           
+           color: getColor 
         });
        
         userDataElem.innerHTML = data
